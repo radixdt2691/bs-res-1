@@ -66,6 +66,12 @@ table {
     border-radius: 18px;
     padding: 8px 45px 8px 20px;
 }
+#check1 {
+    display: none;
+}
+.checkbtn1 {
+    display: none;
+}
 
 ::placeholder{
   
@@ -105,9 +111,7 @@ table {
     padding-bottom: 70px;
 }
 .slide-img{
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+   object-fit: cover;
 }
 .carousel .carousel-control-next-icon {
     width: 56px;
@@ -136,6 +140,10 @@ table {
     font-size: 18px;
     line-height: 30px;
     color: #6C757D;
+}
+.mx-5 {
+    margin-right: 0rem!important; 
+    margin-left: 0rem!important;
 }
 .mt-24{
     margin-top: 24px;
@@ -196,8 +204,6 @@ table {
     border: 1px solid #DEEBFF;
     box-shadow: 0px 4px 10px rgba(172, 172, 172, 0.15);
     border-radius: 5px;
-    max-width: 416px;
-    height: auto;
 }
 
 .pt-68{
@@ -280,4 +286,58 @@ border-radius: 5px;
 
 }
 /* Media Query */
-
+@media screen and (max-width: 991px) {
+    .container{
+        max-width: 720px;
+    }
+    .fa-btn {
+        z-index: 99;
+   }
+    .navbar-1,.topnav, .nav-link {
+        font-size: 50px;
+   }
+    .checkbtn1 {
+        display: block;
+        z-index: 99;
+        font-size: larger;
+   }
+    .topnav {
+        position: fixed;
+        height: 67vh;
+        width: 100%;
+        background-color: #b6d3f3bb;
+        top: 0;
+        right: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 99;
+   }
+    .navbar-1, .topnav, .link {
+        display: block;
+        margin: 0 auto;
+        color: #292929;
+        z-index: 9;
+        cursor: pointer;
+   }
+    .n1 {
+        margin-top: 100px;
+   }
+    .link {
+        padding: 20px;
+   }
+    .fa.fa-bars {
+        font-size: 31px;
+        padding: 18px;
+        color: #e84545;
+   }
+    .navbar-1,.topnav,.link {
+        font-size: 20px;
+        color: #292929;
+   }
+    .navbar-1, .link {
+        transition: .5s;
+   }
+    #check1:checked~.topnav {
+        right: 0;
+   }
+}
