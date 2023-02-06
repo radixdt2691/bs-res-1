@@ -173,6 +173,9 @@ table {
 .bg-img{
     background-image: url("../assets/images/img-text.png");
 }
+.fs-20{
+    font-size: 20px;
+}
 .fs-40{
     font-size: 40px;
 }
@@ -192,6 +195,9 @@ table {
 .text-img{
     background-repeat: no-repeat;
     background-position: left;
+}
+.card-group {
+    max-width: 1200px;
 }
 .card{
     background: #F5F9FF;
@@ -286,7 +292,7 @@ border-radius: 5px;
     .fa-btn {
         z-index: 99;
    }
-    .navbar-1,.topnav, .nav-link {
+    .navbar-1,.topnav{
         font-size: 50px;
    }
     .checkbtn1 {
