@@ -154,9 +154,6 @@ table {
 .mb-30{
     margin-bottom: 30px;
 }
-.w-90{
-    width: 90%;
-}
 .btn-color{
     background: #0D6EFD;
     color:white;
@@ -192,9 +189,6 @@ table {
 .pt-24{
     padding-top: 24px;
 }
-.h-auto{
-    height: auto;
-}
 .text-img{
     background-repeat: no-repeat;
     background-position: left;
@@ -205,7 +199,6 @@ table {
     box-shadow: 0px 4px 10px rgba(172, 172, 172, 0.15);
     border-radius: 5px;
 }
-
 .pt-68{
     padding-top: 68px;
 }
