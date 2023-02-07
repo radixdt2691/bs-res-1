@@ -161,6 +161,9 @@ table {
 .text{
     padding-bottom: 70px;
 }
+.txt{
+    max-width: 920px;
+}
 .background{
     background-color: #F5F9FF;
 }
