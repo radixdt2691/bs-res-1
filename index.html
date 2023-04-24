@@ -1,522 +1,1060 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/css/mdb.min.css" integrity="sha512-hj9rznBPdFg9A4fACbJcp4ttzdinMDtPrtZ3gBD11DiY3O1xJfn0r1U5so/J0zwfGOzq9teIaH5rFmjFAFw8SA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/css/mdb.min.css"
+      integrity="sha512-hj9rznBPdFg9A4fACbJcp4ttzdinMDtPrtZ3gBD11DiY3O1xJfn0r1U5so/J0zwfGOzq9teIaH5rFmjFAFw8SA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-</head>
-<body>
-    <header class="bg-white w-100 position-fixed top-0 start-0 z-3">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-2">
-                    <img src="./assets/images/logo.png" class="img-fluid" width="170" height="85" alt="logo">
-                </div>
-                <div class="col-4 navbar-1" id="myTopnav">
-                    <input type="checkbox" id="check1">
-                    <ul class="topnav justify-content-between d-flex">
-                        <li class="active link"><a href="#">Home</a></li>
-                        <li class="link"><a href="#" class="link" title="Html">Html</a></li>
-                        <li class="link"><a href="#" class="link" title="Css">About Us</a></li>
-                        <li class="link"><a href="#" class="link" title="Layout">Services</a></li>
-                        <li class="link"><a href="#" class="link" title="Bootstrap">Contact</a></li>
-                        <li class="link"><a href="#" class="link" title="Bootstrap">Help</a></li>
-                    </ul>
-                    
-                </div>
-                
-                <div class="col-6 d-flex align-items-center justify-content-center">
-                    <div class="input d-flex align-items-center">
-                        <input class="w-100 form-control search-in" type="text" placeholder="Search your items here">
-                        <i class="fa fa-search icon" aria-hidden="true"></i>
-                    </div>
-                        
-                    <a href="" class="text-dark mx-4 d-block">
-                        <i class="fa fa-envelope fa-2x"></i>
-                        <span class="position-absolute top-10 start-80 translate-middle badge rounded-pill bg-primary">2</span>
-                    </a>
-                    <div class="fa-btn"><label for="check1" class="checkbtn1"><i class="fa fa-bars"></i></label></div>
-                </div>   
-                
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <title>Bootstrap Demo</title>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-xl bg-white w-100 position-fixed top-0 start-0 z-3"
+    >
+      <div class="container col-12">
+        <a class="navbar-brand col-xl-2" href="#"
+          ><img
+            src="./assets/images/logo.png"
+            alt="logo"
+            width="170"
+            height="85"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarSupportedContent"
+        >
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 align-items-baseline gap-55 font-20 col-xl-6"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active txt-primary"
+                aria-current="page"
+                href="#"
+                title="Home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" title="About Us">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" title="Services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" title="Contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" title="Help">Help</a>
+            </li>
+          </ul>
+          <div
+            class="d-flex w-100 align-items-center justify-content-end"
+            role="search"
+          >
+            <div class="search position-relative w-75">
+              <input
+                type="text"
+                name="search"
+                class="input-search w-100"
+                placeholder="Search Your Items Here"
+              />
+              <i
+                class="search-icon fa fa-search position-absolute"
+                aria-hidden="true"
+              ></i>
             </div>
-    </header>
-    <section class="carousle-banner">
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./assets/images/slider-1.png" width="1920" height="706" class="d-block w-100 slide-img" alt="slide-1">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/images/slider-2.png" width="1920" height="706" class="d-block w-100 slide-img" alt="slide-2">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/images/slider-3.png" width="1920" height="706" class="d-block w-100 slide-img" alt="slide-3">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-    </section>
-    
-    <section class="text">
-        <div class="container">
-            <h2 class="text-head text-center">Welcome to Lorem ipsum</h2>
-            <p class="text-para mt-24 text-center">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et<br>
-                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut<br>
-                  aliquip ex ea commodo consequat. 
-            </p>   
-            <div class="mt-56 text-center mx-5">
-                <button type="button" class="btn btn-color rounded">Get Started</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- <section class="img-text background bg-img text-img d-block">
-        <div class="container">
-            <d  iv class="row justify-content-end">
-                <div class="col-6">
-                    <h3 class="text-head fs-40 text-strat pt-90 mx-5">Lorem ipsum</h3>
-                    <p class="text-para text-strat pt-24 mx-5">
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim<br>
-                              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br>
-                               commodo consequat. 
-                    </p>
-                    <div class="mt-56 text-strat mx-5">
-                        <button type="button" class="btn btn-color rounded">Get Started</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <section class="d-flex align-items-center">
-        <div class="col-6">
-          <img src="./assets/images/img-text.png" class="d-block img-fluid" alt="img">
-        </div>
-        <div class="col-6">
-          <div class="txt">
-            <h3 class="text-head fs-40 pt-90">Lorem ipsum</h3>
-            <p class="text-para pt-24">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                       commodo consequat. 
-            </p>
-            <button type="button" class="btn btn-color rounded">Get Started</button>
+            <a href="" class="text-dark mx-4 d-block">
+              <i class="fa fa-envelope fa-2x"></i>
+              <span
+                class="position-absolute top-10 start-80 translate-middle badge rounded-pill bg-primary"
+                >2</span
+              >
+            </a>
           </div>
         </div>
-    </section>
+      </div>
+    </nav>
+    <!-- Navbar End -->
 
-    <section class="cards-banner pt-90 pb-90">
-        <div class="container">
-            <div class="row gap-4 justify-content-center">
-                <div class="card col-12 mb-3 mb-lg-0 col-sm-6 col-lg-3">
-                    <div class="card-body">
-                      <h5 class="card-title pt-68">Card title</h5>
-                      <h6 class="card-subtitle mt-3 text-muted">Card subtitle</h6>
-                      <p class="card-text text-para mt-3 mb-3">Some quick example text to build<br>
-                         on the card title and make up the<br> bulk of the card's content. Some<br>
-                          quick example text to build.</p>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link link-2">Another link</a>
-                    </div>
-                  </div>
-                  <div class="card col-12 mb-3 mb-lg-0 col-sm-6 col-lg-3">
-                    <div class="card-body">
-                      <h5 class="card-title pt-68">Card title</h5>
-                      <h6 class="card-subtitle mt-3 text-muted">Card subtitle</h6>
-                      <p class="card-text text-para mt-3 mb-3">Some quick example text to build<br>
-                         on the card title and make up the<br> bulk of the card's content. Some<br>
-                          quick example text to build.</p>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link link-2">Another link</a>
-                    </div>
-                  </div>
-                  <div class="card col-12 mb-3 mb-lg-0 col-sm-6 col-lg-3">
-                    <div class="card-body">
-                      <h5 class="card-title pt-68">Card title</h5>
-                      <h6 class="card-subtitle mt-3 text-muted">Card subtitle</h6>
-                      <p class="card-text text-para mt-3 mb-3">Some quick example text to build<br>
-                         on the card title and make up the<br> bulk of the card's content. Some<br>
-                          quick example text to build.</p>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link link-2">Another link</a>
-                    </div>
-                  </div>
+    <!-- Carousle banner start -->
+    <section class="carousle-banner pb-80">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/images/slider-1.png"
+              width="1920"
+              height="706"
+              class="d-block w-100 slide-img"
+              alt="slide-1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/images/slider-2.png"
+              width="1920"
+              height="706"
+              class="d-block w-100 slide-img"
+              alt="slide-2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/images/slider-3.png"
+              width="1920"
+              height="706"
+              class="d-block w-100 slide-img"
+              alt="slide-3"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- Carousle banner end -->
+
+    <!-- txt section start -->
+    <section class="text-wrapper mt-0">
+      <div class="container">
+        <h1 class="ff-cormorant font-48 txt-primary text-center">
+          Welcome to Lorem ipsum
+        </h1>
+        <p class="mt-24 text-center ff-karla lh-30 ff-karla txt-tbl">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et<br />
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut<br />
+          aliquip ex ea commodo consequat.
+        </p>
+        <div class="mt-56 text-center mx-5">
+          <button type="button" class="btn btn-color rounded">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- txt-section end -->
+
+    <!-- img-txt section start -->
+    <section>
+      <div class="row flex-column flex-xl-row">
+        <div class="col-12 col-xl-6">
+          <img
+            src="./assets/images/img-text.png"
+            alt="img"
+            width="1108"
+            height="740"
+            class="d-block img-fluid"
+          />
+        </div>
+        <div class="col-12 col-xl-6 mx-auto txt-padding background-primary">
+          <h2 class="font-40 ff-cormorant txt-primary">Lorem Ipsum</h2>
+          <p class="mt-24 ff-karla">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <div class="mt-24">
+            <button type="button" class="btn btn-color rounded">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- img-txt section end -->
+
+    <!-- card section start -->
+    <section class="cards">
+      <div class="container">
+        <div class="row gap-4 justify-content-center">
+          <div class="card col-lg-4 col-xl-3 col-sm-12 background-primary">
+            <div class="card-body">
+              <h5 class="card-title font-36 ff-cormorant txt-primary pt-4 px-4">
+                Card title
+              </h5>
+              <h6
+                class="card-subtitle pt-16 txt-black ff-karla font-20 pb-21 px-4"
+              >
+                Card subtitle
+              </h6>
+              <p class="card-text lh-30 pb-23 px-4 ff-karla">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content. Some quick example text to
+                build.
+              </p>
+              <a
+                href="#"
+                class="card-link d-inline-block pb-5 px-4 text-decoration-underline ff-karla font-20"
+                >Card link</a
+              >
+              <a
+                href="#"
+                class="card-link d-inline-block pb-5 txt-black text-decoration-underline ff-karla font-20"
+                >Another link</a
+              >
             </div>
+          </div>
+          <div class="card col-lg-4 col-xl-3 col-sm-12 background-primary">
+            <div class="card-body">
+              <h5 class="card-title font-36 ff-cormorant txt-primary pt-4 px-4">
+                Card title
+              </h5>
+              <h6
+                class="card-subtitle pt-16 txt-black ff-karla font-20 pb-21 px-4"
+              >
+                Card subtitle
+              </h6>
+              <p class="card-text lh-30 pb-23 px-4 ff-karla">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content. Some quick example text to
+                build.
+              </p>
+              <a
+                href="#"
+                class="card-link d-inline-block pb-5 px-4 text-decoration-underline ff-karla font-20"
+                >Card link</a
+              >
+              <a
+                href="#"
+                class="card-link d-inline-block pb-5 txt-black text-decoration-underline ff-karla font-20"
+                >Another link</a
+              >
+            </div>
+          </div>
+          <div class="card col-lg-4 col-xl-3 col-sm-12 background-primary">
+            <div class="card-body">
+              <h5 class="card-title font-36 ff-cormorant txt-primary pt-4 px-4">
+                Card title
+              </h5>
+              <h6
+                class="card-subtitle pt-16 txt-black ff-karla font-20 pb-21 px-4"
+              >
+                Card subtitle
+              </h6>
+              <p class="card-text lh-30 pb-23 px-4 ff-karla">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content. Some quick example text to
+                build.
+              </p>
+              <a
+                href="#"
+                class="card-link d-inline-block pb-5 px-4 text-decoration-underline ff-karla font-20"
+                >Card link</a
+              >
+              <a
+                href="#"
+                class="card-link d-inline-block pb-5 txt-black text-decoration-underline ff-karla font-20"
+                >Another link</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </section>
+    <!-- card section end -->
 
-    <section class="table pt-90 pb-90 background">
-        <div class="container">
-            <table class="table table-bordered border-primary w-50 text-center mx-auto">
-                <thead class="head">
-                  <tr class="">
-                    <th class="table-primary" scope="col">#</th>
-                    <th class="table-primary" scope="col">First</th>
-                    <th class="table-primary" scope="col">Last</th>
-                    <th class="table-primary" scope="col">Handle</th>
-                  </tr>
-                </thead>
-                <tbody class="">
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th class="table-secondary" scope="row">2</th>
-                    <td class="table-secondary">Jacob</td>
-                    <td class="table-secondary">Thornton</td>
-                    <td class="table-secondary">@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Larry the Bird</td>
-                    <td>@fat</td>
-                    <td>@twitter</td>
-                  </tr>
-                  <tr>
-                    <th class="table-secondary" scope="row">4</th>
-                    <td class="table-secondary">Larry the Bird</td>
-                    <td class="table-secondary">@fat</td>
-                    <td class="table-secondary">@twitter</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>Larry the Bird</td>
-                    <td>@fat</td>
-                    <td>@twitter</td>
-                  </tr>
-                  <tr>
-                    <th class="table-secondary" scope="row">6</th>
-                    <td class="table-secondary">Larry the Bird</td>
-                    <td class="table-secondary">@fat</td>
-                    <td class="table-secondary">@twitter</td>
-                  </tr>
-                </tbody>
-              </table>
+    <!-- table section start -->
+    <section class="background-primary py-80">
+      <div class="container">
+        <table
+          class="table table-bordered border-primary w-62 text-center mx-auto tbl-shadow"
+        >
+          <thead class="head">
+            <tr class="bg-tbl-primary">
+              <th class="ff-cormorant text-white font-28" scope="col">#</th>
+              <th class="ff-cormorant text-white font-28" scope="col">First</th>
+              <th class="ff-cormorant text-white font-28" scope="col">Last</th>
+              <th class="ff-cormorant text-white font-28" scope="col">
+                Handle
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-white">
+              <th scope="row" class="font-20 ff-karla txt-tbl">1</th>
+              <td class="font-20 ff-karla txt-tbl">Mark</td>
+              <td class="font-20 ff-karla txt-tbl">Otto</td>
+              <td class="font-20 ff-karla txt-tbl">@mdo</td>
+            </tr>
+            <tr class="table-secondary">
+              <th scope="row" class="font-20 ff-karla txt-tbl">2</th>
+              <td class="font-20 ff-karla txt-tbl">Jacob</td>
+              <td class="font-20 ff-karla txt-tbl">Thornton</td>
+              <td class="font-20 ff-karla txt-tbl">@fat</td>
+            </tr>
+            <tr class="bg-white">
+              <th scope="row" class="font-20 ff-karla txt-tbl">3</th>
+              <td class="font-20 ff-karla txt-tbl">Larry the Bird</td>
+              <td class="font-20 ff-karla txt-tbl"></td>
+              <td class="font-20 ff-karla txt-tbl">@twitter</td>
+            </tr>
+            <tr class="table-secondary">
+              <th scope="row" class="font-20 ff-karla txt-tbl">4</th>
+              <td class="font-20 ff-karla txt-tbl">Jacob</td>
+              <td class="font-20 ff-karla txt-tbl">Thornton</td>
+              <td class="font-20 ff-karla txt-tbl"></td>
+            </tr>
+            <tr class="bg-white">
+              <th scope="row" class="font-20 ff-karla txt-tbl">5</th>
+              <td class="font-20 ff-karla txt-tbl">Jarry</td>
+              <td class="font-20 ff-karla txt-tbl">Madrid</td>
+              <td class="font-20 ff-karla txt-tbl">@insta</td>
+            </tr>
+            <tr class="table-secondary">
+              <th scope="row" class="font-20 ff-karla txt-tbl">6</th>
+              <td class="font-20 ff-karla txt-tbl">zen</td>
+              <td class="font-20 ff-karla txt-tbl">Arial</td>
+              <td class="font-20 ff-karla txt-tbl">@facebook</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- table section end -->
+
+    <!-- FAQ's Start -->
+    <section class="faq">
+      <div class="container">
+        <h3 class="text-head font-40 ff-cormorant txt-primary text-center mb-5">
+          FAQ Lorem Ipsum
+        </h3>
+        <div
+          class="accordion mx-auto col-9 d-flex flex-column gap-4"
+          id="accordionExample"
+        >
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button background-primary font-24 ff-cormorant"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Where does it come from?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body lh-30 ff-karla txt-tbl">
+                <p>
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC, making it over 2000 years old. Richard McClintock,
+                  a Latin professor at Hampden-Sydney College in
+                  Virginia.Contrary to popular belief, Lorem Ipsum is not simply
+                  random text. It has roots in a piece of classical Latin
+                  literature from 45 BC.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button background-primary font-24 ff-cormorant collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Where do you need this?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body lh-30 ff-karla txt-tbl">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body text-para</code>, though the transition
+                does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button background-primary font-24 ff-cormorant collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Why do we use it?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body lh-30 ff-karla txt-tbl">
+                <strong>This is the third item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body text-para</code>, though the transition
+                does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button background-primary font-24 ff-cormorant collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Where can I get some?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body lh-30 ff-karla txt-tbl">
+                <strong>This is the third item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body text-para</code>, though the transition
+                does limit overflow.
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
+    <!-- FAQ's end -->
 
-    <section class="faq pt-90">
-        <div class="container">
-            <h3 class="text-head fs-40 text-center mb-5">FAQ Lorem Ipsum</h3>
-            <div class="accordion mx-auto" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Where does it come from?
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body text-para">
-                      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+    <!-- Form start -->
+    <section class="background-primary pb-78">
+      <div class="container">
+        <h3 class="font-40 txt-primary ff-cormorant text-center mb-70 pt-60">
+          Lorem Ipsum Form
+        </h3>
+        <div class="tab rounded mx-auto bg-white col-12 col-lg-9">
+          <ul
+            class="nav nav-pills pt-5 px-5 gap-2 flex-md-row justify-content-center justify-content-lg-start"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active fs-20"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                Form
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link fs-20"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                Request
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link fs-20"
+                id="pills-quote-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-quote"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                Quote
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link fs-20"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                Edit
+              </button>
+            </li>
+          </ul>
+
+          <div class="tab-content mb-3 pt-5 px-5" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active text-decoration-none"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+            >
+              <form class="user-form w-100">
+                <div
+                  class="d-flex flex-column flex-lg-row flex-lg-wrap justify-content-lg-start"
+                >
+                  <div
+                    class="col-12 col-lg-6 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start mb-30"
+                  >
+                    <label for="fn" class="col-form-label col-md-2 col-12"
+                      >First Name:</label
+                    >
+                    <div class="col-12 col-lg-8">
+                      <input
+                        class="bg-body-secondary form-control"
+                        type="text"
+                        id="fn"
+                        placeholder="Enter your First Name"
+                      />
                     </div>
                   </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Where do you need this?
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body text-para">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body text-para</code>, though the transition does limit overflow.
+                  <div
+                    class="col-12 col-lg-6 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start mb-30"
+                  >
+                    <label for="ln" class="col-form-label col-md-2 col-12"
+                      >Last Name:</label
+                    >
+                    <div class="col-12 col-lg-8">
+                      <input
+                        class="bg-body-secondary form-control"
+                        type="text"
+                        id="ln"
+                        placeholder="Enter your Last Name"
+                      />
                     </div>
                   </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Why do we use it?
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body text-para">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body text-para</code>, though the transition does limit overflow.
+                  <div
+                    class="col-12 col-lg-6 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start mb-30"
+                  >
+                    <label for="email" class="col-form-label col-md-2 col-12"
+                      >Email Id:</label
+                    >
+                    <div class="col-12 col-lg-8">
+                      <input
+                        class="bg-body-secondary form-control"
+                        type="email"
+                        id="email"
+                        placeholder="Enter your Email Id"
+                      />
                     </div>
                   </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Where can I get some?
-                      </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                      <div class="accordion-body text-para">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body text-para</code>, though the transition does limit overflow.
+                  <div
+                    class="col-12 col-lg-6 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start mb-30"
+                  >
+                    <label for="web" class="col-form-label col-md-2 col-12"
+                      >Website:</label
+                    >
+                    <div class="col-12 col-lg-8">
+                      <input
+                        class="bg-body-secondary form-control"
+                        type="url"
+                        id="web"
+                        placeholder="Enter your Website"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="col-12 col-lg-6 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start mb-30"
+                  >
+                    <label for="mobile" class="col-form-label col-md-2 col-12"
+                      >Mobile:</label
+                    >
+                    <div class="col-12 col-lg-8">
+                      <input
+                        class="bg-body-secondary form-control"
+                        type="text"
+                        id="mobile"
+                        placeholder="Enter your Mobile Number"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="col-12 col-lg-6 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start mb-30"
+                  >
+                    <label for="date" class="col-form-label col-md-2 col-12"
+                      >Date:</label
+                    >
+                    <div class="col-12 col-lg-8">
+                      <input
+                        class="bg-body-secondary form-control txt-tbl"
+                        type="date"
+                        id="date"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="col-12 col-lg-6 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start mb-3"
+                  >
+                    <label for="city" class="col-form-label col-md-2 col-12"
+                      >City:</label
+                    >
+                    <div class="col-12 col-lg-6">
+                      <select class="bg-body-secondary form-select txt-tbl" id="city">
+                        <option selected>Select Your City</option>
+                        <option>Ahmedabad</option>
+                        <option>Surat</option>
+                        <option>Rajkot</option>
+                        <option>Vadodra</option>
+                        <option>Baroda</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div
+                    class="col-12 col-lg-6 d-flex flex-column flex-lg-row justify-content-lg-start"
+                  >
+                    <label for="state" class="col-form-label col-md-2 col-12"
+                      >State:</label
+                    >
+                    <div class="col-12 col-lg-3">
+                      <select class="bg-body-secondary form-select txt-tbl" id="state">
+                        <option selected>State</option>
+                        <option>Gujarat</option>
+                        <option>Banglore</option>
+                        <option>Hydrabad</option>
+                      </select>
+                    </div>
+                    <div
+                      class="col-12 col-lg-6 d-flex flex-column flex-lg-row justify-content-start mb-30"
+                    >
+                      <label
+                        for="pincode"
+                        class="col-form-label col-md-2 col-12 mx-3"
+                        >Zip:</label
+                      >
+                      <div class="col-12 col-lg-6">
+                        <input
+                          class="bg-body-secondary form-control"
+                          type="text"
+                          id="pincode"
+                          placeholder="Pincode"
+                        />
                       </div>
                     </div>
                   </div>
-              </div>
-        </div>
-    </section>
 
-    <section class="ptb-90 mt-56 background">
-        <div class="container">
-          <h3 class="text-head fs-40 text-center mb-5">Lorem Ipsum Form</h3>
-          <div class="tab rounded mx-auto" style="background-color: white;"> 
-              <ul class="nav nav-pills pt-5 px-5 gap-2" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active fs-20" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Form</button>
+                  <div
+                    class="col-12 col-lg-6 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start mb-30"
+                  >
+                    <div class="col-12 col-lg-6">
+                      <input
+                        class="bg-body-secondary form-control txt-tbl"
+                        type="file"
+                        id="file"
+                      />
+                    </div>
+                  </div>
+                  <div class="mb-30">
+                    <div
+                      class="col-12 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start align-items-start gap-4"
+                    >
+                      <input
+                        class="form-check-input mt-0"
+                        type="checkbox"
+                        value=""
+                        aria-label="Checkbox for following text input"
+                      />
+                      <p class="ff-karla">Agree to terms and conditions</p>
+                    </div>
+                  </div>
+                  <div class="col-6 mb-30">
+                    <button type="button" class="btn btn-primary rounded">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+            >
+              <div class="card mx-auto col-6 col-md-4">
+                <img
+                  src="/assets/images/card-1.png"
+                  class="card-img-top"
+                  alt="card"
+                  width="50"
+                  height="180"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Coding Yaar</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-quote"
+              role="tabpanel"
+              aria-labelledby="pills-quote-tab"
+            >
+              <ul class="list-group mx-auto">
+                <li class="list-group-item">
+                  The greatest glory in living lies not in never falling, but in
+                  rising every time we fall. -Nelson Mandela
                 </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link fs-20" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Request</button>
+                <li class="list-group-item">
+                  The way to get started is to quit talking and begin doing.
+                  -Walt Disney
                 </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link fs-20" id="pills-quote-tab" data-bs-toggle="pill" data-bs-target="#pills-quote" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Quote</button>
+                <li class="list-group-item">
+                  Your time is limited, so don't waste it living someone else's
+                  life. Don't be trapped by dogma - which is living with the
+                  results of other people's thinking. -Steve Jobs
                 </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link fs-20" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Edit</button>
+                <li class="list-group-item">
+                  If life were predictable it would cease to be life, and be
+                  without flavor. -Eleanor Roosevelt
+                </li>
+                <li class="list-group-item mb-30">
+                  Life is what happens when you're busy making other plans.
+                  -John Lennon
                 </li>
               </ul>
-          
-              <div class="tab-content mb-3 pt-5 px-5" id="pills-tabContent">
-                <div class="tab-pane fade show active text-decoration-none" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <form>
-                    <div class="row">
-                      <div class="input-group w-50 d-flex mb-3">
-                        <label for="fn" class="col-sm-2 col-form-label">First Name:</label>
-                        <div class="col-sm-7">
-                          <input type="text" class="form-control" id="fn">
-                        </div>
-                      </div>
-                      <div class="input-group w-50 col-sm-6 d-flex mb-3">
-                        <label for="ln" class="col-sm-2 col-form-label">Last Name:</label>
-                        <div class="col-sm-7">
-                          <input type="text" class="form-control" id="ln">
-                        </div>
-                      </div>
-                      <div class="input-group w-50 col-6 d-flex mb-3">
-                        <label for="email" class="col-sm-2 col-form-label">Email Id:</label>
-                        <div class="col-sm-7">
-                          <input type="email" class="form-control" id="email">
-                        </div>
-                      </div>
-                      <div class="input-group w-50 col-6 d-flex mb-3">
-                        <label for="web" class="col-sm-2 col-form-label">Website:</label>
-                        <div class="col-sm-7">
-                          <input type="url" class="form-control" id="web">
-                        </div>
-                      </div>
-                      <div class="input-group w-50 col-6 d-flex mb-3">
-                        <label for="mobile" class="col-sm-2 col-form-label">Mobile:</label>
-                        <div class="col-sm-7">
-                          <input type="text" class="form-control" id="mobile">
-                        </div>
-                      </div>
-                      <div class="input-group w-50 col-6 d-flex mb-3">
-                        <label for="date" class="col-sm-2 col-form-label">Date:</label>
-                        <div class="col-sm-7">
-                          <input type="date" class="form-control w-50" id="date">
-                        </div>
-                      </div>
-                      <div class="input-group w-50 col-6 d-flex mb-3">
-                        <label for="city" class="col-sm-2 col-form-label">City:</label>
-                        <div class="col-sm-4">
-                          <select class="form-select" id="city">
-                            <option selected>Select Your City</option>
-                            <option>Ahmedabad</option>
-                            <option>Surat</option>
-                            <option>Rajkot</option>
-                            <option>Vadodra</option>
-                            <option>Baroda</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="input-group w-50 col-6 d-flex mb-3">
-                        <label for="state" class="col-sm-2 col-form-label">State:</label>
-                        <div class="col-sm-3">
-                          <select class="form-select" id="state">
-                            <option selected>State</option>
-                            <option>Gujarat</option>
-                            <option>Banglore</option>
-                            <option>Hydrabad</option>
-                          </select>
-                        </div>
-                        <div class="input-group w-50 col-6 d-flex mb-3">
-                          <label for="pincode" class="col-sm-2 col-form-label mx-3">Zip:</label>
-                          <div class="col-sm-5">
-                            <input type="text" class="form-control" id="pincode">
-                          </div>
-                        </div>  
-                      </div>
-                    
-                      <div class="input-group w-50 col-6 d-flex mb-3">
-                        <div class="col-sm-6">
-                          <input type="file" class="form-control" id="file">
-                        </div>
-                      </div>
-                      <div class="mb-3">
-                        <div class="col-sm-3">
-                          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-                          <label>Agree to terms and conditions</label>
-                        </div>
-                      </div>
-                      <div class="col-6 mt-3 mb-30">
-                        <button type="button" class="btn btn-primary rounded">Submit</button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                  <div class="card mx-auto">
-                    <img src="/assets/images/card-1.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Coding Yaar</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Know More</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="pills-quote" role="tabpanel" aria-labelledby="pills-quote-tab">
-                  <ul class="list-group mx-auto">
-                    <li class="list-group-item">The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela</li>
-                    <li class="list-group-item">The way to get started is to quit talking and begin doing. -Walt Disney</li>
-                    <li class="list-group-item">Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma - which is living with the results of other people's thinking. -Steve Jobs</li>
-                    <li class="list-group-item">If life were predictable it would cease to be life, and be without flavor. -Eleanor Roosevelt</li>
-                    <li class="list-group-item mb-30">Life is what happens when you're busy making other plans. -John Lennon</li>
-                  </ul>
-                </div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                  edit something
-                </div>
-              </div>
-          </div>
-        </div>
-    </section>
-
-    <section class="card-3 pt-90 pb-90"> 
-      <div class="container">
-        <div class="card-group mx-auto gap-4">
-          <div class="card">
-            <img src="./assets/images/card-1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title mt-3 mb-3 fs-28 h-color">The Ultimate Guide to Traveling
-                When You Have No Money</h5>
-              <p class="card-text mt-4 mb-4 lh-25 text-para text-strat">Image for cattle earth. May one Which life<br> divide sea. Commodi soluta minima nemo,<br> May one Which life divide sea.</p>
-              <a href="#">Go somewhere <span><i class="fa fa-long-arrow-right ml-20" aria-hidden="true"></i></span></a>
             </div>
-          </div>
-          <div class="card">
-            <img src="./assets/images/card-2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title mt-3 mb-3 fs-28 h-color">The Ultimate Guide to Traveling
-                When You Have No Money</h5>
-              <p class="card-text mt-4 mb-4 lh-25 text-para text-strat">Image for cattle earth. May one Which life divide sea. Commodi soluta minima nemo, May one Which life divide sea.</p>
-              <a href="#">Go somewhere <span><i class="fa fa-long-arrow-right ml-20" aria-hidden="true"></i></span></a>
-            </div>
-          </div>
-          <div class="card">
-            <img src="./assets/images/card-3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title mt-3 mb-3 fs-28 h-color">The Ultimate Guide to Traveling
-                When You Have No Money</h5>
-              <p class="card-text mt-4 mb-4 lh-25 text-para text-strat">Image for cattle earth. May one Which life divide sea. Commodi soluta minima nemo, May one Which life divide sea.</p>
-              <a href="#">Go somewhere <span><i class="fa fa-long-arrow-right ml-20" aria-hidden="true"></i></span></a>
+            <div
+              class="tab-pane fade"
+              id="pills-contact"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+            >
+              edit something
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Form end -->
+
+    <!-- card start -->
+    <section class="card-3 pt-90 pb-90">
+      <div class="container">
+        <h3 class="text-head font-40 ff-cormorant txt-primary text-center mb-5">
+          Lorem Ipsum Blog
+        </h3>
+        <div class="card-group col-9 col-md-12 mx-auto gap-4">
+          <div class="card">
+            <img
+              src="./assets/images/card-1.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body background-primary">
+              <h5
+                class="card-title mt-3 mb-3 font-28 txt-black ff-cormorant lh-30"
+              >
+                The Ultimate Guide to Traveling When You Have No Money
+              </h5>
+              <p class="card-text mt-4 mb-4 lh-30 ff-karla">
+                Image for cattle earth. May one Which life<br />
+                divide sea. Commodi soluta minima nemo,<br />
+                May one Which life divide sea.
+              </p>
+              <a href="#" class="ff-karla"
+                >View More<span class="m-4"
+                  ><i class="fa fa-arrow-right" aria-hidden="true"></i></span
+              ></a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assets/images/card-2.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body background-primary">
+              <h5
+                class="card-title mt-3 mb-3 font-28 txt-black ff-cormorant lh-30"
+              >
+                The Ultimate Guide to Traveling When You Have No Money
+              </h5>
+              <p class="card-text mt-4 mb-4 lh-30 ff-karla">
+                Image for cattle earth. May one Which life divide sea. Commodi
+                soluta minima nemo, May one Which life divide sea.
+              </p>
+              <a href="#" class="ff-karla"
+                >View More<span class="m-4"
+                  ><i class="fa fa-arrow-right" aria-hidden="true"></i></span
+              ></a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assets/images/card-3.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body background-primary">
+              <h5
+                class="card-title mt-3 mb-3 font-28 txt-black ff-cormorant lh-30"
+              >
+                The Ultimate Guide to Traveling When You Have No Money
+              </h5>
+              <p class="card-text mt-4 mb-4 lh-30 ff-karla">
+                Image for cattle earth. May one Which life divide sea. Commodi
+                soluta minima nemo, May one Which life divide sea.
+              </p>
+              <a href="#" class="ff-karla"
+                >View More<span class="m-4"
+                  ><i class="fa fa-arrow-right" aria-hidden="true"></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- card end -->
 
     <!-- Footer -->
-  <footer class="text-center container text-lg-start background text-muted">
-    <section>
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
-            <img src="./assets/images/logo.png"  class="mt-5 mb-5 img-fluid" width="170" height="85">
-            <p class="text-para">
-              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical, May one Which life divide sea.
-            </p>
-            <div class="input-group has-validation mt-3 mb-4">
-              <input type="email" class="form-control frm-mail" id="username" placeholder="Enter Your Email Id" required="">
-              <span class="input-group-text btn-primary">Subscribe</span>
+    <footer class="text-center container text-lg-start background-primary">
+      <section>
+        <div class="container">
+          <!-- Grid row -->
+          <div
+            class="row align-items-center justify-content-center pb-4 border-bottom border-dark-subtle"
+          >
+            <!-- Grid column -->
+            <div class="col-lg-12 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <div class="d-flex flex-column justify-content-center">
+                <a href="#" title="Home"
+                  ><img
+                    src="./assets/images/logo.png"
+                    alt="logo"
+                    class="mt-5 mb-3 img-fluid"
+                    width="160"
+                    height="80"
+                /></a>
+                <p class="mx-2 ff-karla lh-30 mb-3">
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical, May one Which life
+                  divide sea.
+                </p>
+                <div class="input-group has-validation mt-3 mb-4">
+                  <input
+                    type="email"
+                    class="form-control frm-mail"
+                    id="username"
+                    placeholder="Enter Your Email Id"
+                    required=""
+                  />
+                  <span class="input-group-text btn-primary">Subscribe</span>
+                </div>
+              </div>
             </div>
-          </div>
-          <!-- Grid column -->
-          <div class="col-sm-6 col-md-2 col-lg-2 col-xl-2 mb-4">
-            <!-- Links -->
-            <h3 class="text-head fs-24 mt-5">Primary Pages</h3>
-            <p class="text-para mt-3 mb-3">
-              <a href="#" class="text-reset">Home</a>
-            </p>
-            <p class="text-para mt-3 mb-3">
-              <a href="#" class="text-reset">About Us</a>
-            </p>
-            <p class="text-para mt-3 mb-3">
-              <a href="#" class="text-reset">Services</a>
-            </p>
-            <p class="text-para mt-3 mb-3">
-              <a href="#" class="text-reset">Career</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-          <div class="col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-4">
-            <!-- Links -->
-            <h3 class="text-head fs-24 mt-5">Pages</h3>
-            <p class="text-para mt-3 mb-3">
-              <a href="#" class="text-reset">Home</a>
-            </p>
-            <p class="text-para mt-3 mb-3">
-              <a href="#" class="text-reset">About Us</a>
-            </p>
-            <p class="text-para mt-3 mb-3">
-              <a href="#" class="text-reset">Services</a>
-            </p>
-            <p class="text-para mt-3 mb-3">
-              <a href="#" class="text-reset">Career</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mb-md-0 mb-4">
-            <!-- Links -->
-            <h3 class="text-head fs-24 mt-5">Instagram</h3>
-            <div class="d-flex gap-2 justify-content-start">
-              <img src="./assets/images/sm-6.png" width="86" height="82" class="mt-3 rounded" alt="">
-              <img src="./assets/images/sm-5.png" width="86" height="82" class="mt-3 rounded" alt="">
-              <img src="./assets/images/sm-4.png" width="86" height="82" class="mt-3 rounded" alt="">
+            <!-- Grid column -->
+            <div
+              class="col-12 px-4 pb-5 pb-md-0 col-sm-6 col-md-4 col-lg-3 col-xl-2"
+            >
+              <!-- Links -->
+              <h3 class="font-24 ff-cormorant txt-primary mb-30 bb">
+                Primary Pages
+              </h3>
+              <div class="d-flex flex-column gap-19 border-all">
+                <p class="ff-karla">
+                  <a href="#" class="text-reset">Home</a>
+                </p>
+                <p class="ff-karla">
+                  <a href="#" class="text-reset">About Us</a>
+                </p>
+                <p class="ff-karla">
+                  <a href="#" class="text-reset">Services</a>
+                </p>
+                <p class="ff-karla">
+                  <a href="#" class="text-reset">Career</a>
+                </p>
+              </div>
             </div>
-            <div class="d-flex gap-2 justify-content-start">
-              <img src="./assets/images/sm-3.png" width="86" height="82" class="mt-3 rounded" alt="">
-              <img src="./assets/images/sm-2.png" width="86" height="82" class="mt-3 rounded" alt="">
-              <img src="./assets/images/sm-1.png" width="86" height="82" class="mt-3 rounded" alt="">
+            <!-- Grid column -->
+            <div
+              class="col-12 px-4 pb-5 pb-md-0 col-sm-6 col-md-4 col-lg-3 col-xl-2"
+            >
+              <!-- Links -->
+              <h3 class="font-24 ff-cormorant txt-primary mb-30 bb">Pages</h3>
+              <div class="d-flex flex-column gap-19 border-all">
+                <p class="ff-karla">
+                  <a href="#" class="text-reset">Home</a>
+                </p>
+                <p class="ff-karla">
+                  <a href="#" class="text-reset">About Us</a>
+                </p>
+                <p class="ff-karla">
+                  <a href="#" class="text-reset">Services</a>
+                </p>
+                <p class="ff-karla">
+                  <a href="#" class="text-reset">Career</a>
+                </p>
+              </div>
             </div>
+            <!-- Grid column -->
+            <div class="col-12 col-md-6 col-xl-3 mb-md-0">
+              <!-- Links -->
+              <h3 class="font-24 ff-cormorant txt-primary mt-4">Instagram</h3>
+              <div
+                class="d-flex gap-2 justify-content-center justify-content-lg-start"
+              >
+                <img
+                  src="./assets/images/sm-6.png"
+                  width="86"
+                  height="82"
+                  class="mt-3 rounded"
+                  alt=""
+                />
+                <img
+                  src="./assets/images/sm-5.png"
+                  width="86"
+                  height="82"
+                  class="mt-3 rounded"
+                  alt=""
+                />
+                <img
+                  src="./assets/images/sm-4.png"
+                  width="86"
+                  height="82"
+                  class="mt-3 rounded"
+                  alt=""
+                />
+              </div>
+              <div
+                class="d-flex gap-2 justify-content-center justify-content-lg-start"
+              >
+                <img
+                  src="./assets/images/sm-3.png"
+                  width="86"
+                  height="82"
+                  class="mt-3 rounded"
+                  alt=""
+                />
+                <img
+                  src="./assets/images/sm-2.png"
+                  width="86"
+                  height="82"
+                  class="mt-3 rounded"
+                  alt=""
+                />
+                <img
+                  src="./assets/images/sm-1.png"
+                  width="86"
+                  height="82"
+                  class="mt-3 rounded"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- Grid column -->
           </div>
-          <!-- Grid column -->
+          <!-- Grid row -->
         </div>
-        <!-- Grid row -->
-      </div>
-    </section>
-    <!-- Section: Links  -->
+      </section>
+      <!-- Section: Links  -->
 
-    <!-- Copyright -->
-    <div class="text-center p-4 text-para" style="border-top: 1px solid #6C757D;">
-     <a href="#" class="link">© 2023 Quiety Rights Reserved. Designed By LoremIpsum</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-<!-- Footer -->
-</body>
+      <!-- Copyright -->
+      <div class="text-center p-4">
+        <a href="#" class="footer-link"
+          >&#169; 2023 Quiety Rights Reserved. Designed By LoremIpsum</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </body>
 </html>
